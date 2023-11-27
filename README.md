@@ -12,11 +12,12 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
 
 ### Newbie
 
-| [QR Code Component](https://github.com/jilenski/frontend-mentor-solutions/tree/main/qr-code-component)                           | [Results Summary Component](https://github.com/jilenski/frontend-mentor-solutions/tree/main/results-summary-component)      | [Product Preview Card Component](https://github.com/jilenski/frontend-mentor-solutions/tree/main/product-preview-card-component)    |
-| :------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| [![](././qr-code-component/ss-web.jpg)![](./qr-code-component/)](https://frontend-mentor-solution-qr-code-component.vercel.app/) | [![](././results-summary-component/ss-desktop.png)](https://frontend-mentor-solution-results-summary-component.vercel.app/) | [![](./product-preview-card-component/ss-desktop.png)](https://frontend-mentor-solution-product-preview-card-component.vercel.app/) |
+| [QR Code Component](https://github.com/jilenski/frontend-mentor-solutions/tree/main/qr-code-component)                           | [Results Summary Component](https://github.com/jilenski/frontend-mentor-solutions/tree/main/results-summary-component)      | [Product Preview Card Component](https://github.com/jilenski/frontend-mentor-solutions/tree/main/product-preview-card-component)     |
+| :------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| [![](././qr-code-component/ss-web.jpg)![](./qr-code-component/)](https://frontend-mentor-solution-qr-code-component.vercel.app/) | [![](././results-summary-component/ss-desktop.png)](https://frontend-mentor-solution-results-summary-component.vercel.app/) | [![](./product-preview-card-component/ss-desktop.png)](https://frontend-mentor-solutions-product-preview-card-component.vercel.app/) |
 
 ## Author
 
-| <img src="https://media.licdn.com/dms/image/D5603AQF3ma3L9Mw6KQ/profile-displayphoto-shrink_800_800/0/1688980503267?e=1706745600&v=beta&t=UzT3_k4dR8PN1WiV29e56Tap3wQG6HH7xsrJkZh-nSY" alt="profile" width="80" style="border-radius: 100%"> | Website - [Jeanelyn Tayhopon](https://jeanelyntayhopon.com/)<br>Frontend Mentor - [@jilenski](https://www.frontendmentor.io/profile/jilenski)<br> Github - [jilenski](https://github.com/jilenski) |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+- Website - [Jeanelyn Tayhopon](https://jeanelyntayhopon.com/)
+- Frontend Mentor - [@jilenski](https://www.frontendmentor.io/profile/jilenski)
+- Github - [jilenski](https://github.com/jilenski)
