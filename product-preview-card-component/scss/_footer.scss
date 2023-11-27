@@ -1,0 +1,13 @@
+footer {
+  width: 100%;
+  background: $cream;
+  position: fixed;
+  font-size: 11px;
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
