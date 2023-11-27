@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: Hanken Grotesk, sans-serif;
+}
+main .result {
+  width: 100%;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  padding: 21px 47px;
+  gap: 24px;
+}
+main .result h3 {
+  color: hsl(241, 100%, 89%);
+  font-size: 20px;
+}
+main .result .circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(180deg, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 100%;
+  width: 140px;
+  height: 140px;
+}
+main .result .circle h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 60px;
+}
+main .result .circle p {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+}
+main .result .remarks h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+}
+main .result .remarks p {
+  color: hsl(241, 100%, 89%);
+  font-size: 16px;
+}
+main .summary {
+  width: 100%;
+  padding: 22px 30px 50px 30px;
+}
+main .summary h3 {
+  font-size: 18px;
+  color: hsl(224, 30%, 27%);
+}
+main .summary #cards-container {
+  margin: 19px 0 25px 0;
+}
+main .summary #cards-container .card {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 17px;
+}
+main .summary #cards-container .card .card-category {
+  display: inline-flex;
+  gap: 15px;
+}
+main .summary #cards-container .card .card-score p {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+main .summary #cards-container .card .card-score span {
+  color: #97919b;
+  font-weight: 500;
+}
+main .summary button {
+  width: 100%;
+  height: 56px;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+main .summary button:hover {
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+footer {
+  width: 100%;
+  background: hsl(0, 0%, 100%);
+  position: fixed;
+  font-size: 11px;
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 376px) {
+  body {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 hsl(221, 100%, 96%), 0 6px 20px 0 hsl(221, 100%, 96%);
+    flex-direction: row;
+    max-width: 736px;
+    height: 512px;
+  }
+  main .result {
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 36px 60px;
+  }
+  main .result h3 {
+    font-size: 25px;
+  }
+  main .result .circle {
+    width: 200px;
+    height: 200px;
+  }
+  main .result .circle h1 {
+    font-size: 75px;
+    font-weight: 800;
+  }
+  main .result .remarks h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  main .result .remarks p {
+    font-size: 18px;
+  }
+  main .summary {
+    width: 50%;
+    padding: 37px 40px 46px 40px;
+  }
+  main .summary h3 {
+    font-size: 25px;
+  }
+  main .summary #cards-container {
+    margin: 32px 0 41px 0;
+  }
+  main .summary #cards-container .card {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=main.css.map */

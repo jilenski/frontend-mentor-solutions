@@ -1,0 +1,201 @@
+@import './config';
+
+@function weight($weight) {
+  @return map-get($font-weights, $weight);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+
+  .result {
+    width: 100%;
+    height: 356px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, $light-slate-blue, $light-royal-blue);
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+    padding: 21px 47px;
+    gap: 24px;
+
+    h3 {
+      color: $light-lavender;
+      font-size: 20px;
+    }
+
+    .circle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(180deg, $violet-blue, $persian-blue);
+      border-radius: 100%;
+      width: 140px;
+      height: 140px;
+
+      h1 {
+        color: $white;
+        font-size: 60px;
+      }
+
+      p {
+        color: $light-lavender;
+        font-size: 18px;
+      }
+    }
+
+    .remarks {
+      h2 {
+        color: $white;
+        font-size: 24px;
+      }
+
+      p {
+        color: $light-lavender;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .summary {
+    width: 100%;
+    padding: 22px 30px 50px 30px;
+
+    h3 {
+      font-size: 18px;
+      color: $dark-gray-blue;
+    }
+
+    #cards-container {
+      margin: 19px 0 25px 0;
+
+      .card {
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        padding: 15px;
+        margin-bottom: 17px;
+
+        .card-category {
+          display: inline-flex;
+          gap: 15px;
+        }
+
+        .card-score {
+          p {
+            color: $dark-gray-blue;
+            font-weight: weight(bold);
+          }
+
+          span {
+            color: #97919b;
+            font-weight: weight(light);
+          }
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 56px;
+      background-color: $dark-gray-blue;
+      border-radius: 30px;
+      border: none;
+      color: $white;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: weight(light);
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(
+          180deg,
+          $light-slate-blue,
+          $light-royal-blue
+        );
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background: $white;
+  position: fixed;
+  font-size: 11px;
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (min-width: $mobile) {
+  body {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    border-radius: 30px;
+    box-shadow: 0 8px 16px 0 hsl(221, 100%, 96%),
+      0 12px 40px 0 hsl(221, 100%, 96%);
+    flex-direction: row;
+    max-width: 736px;
+    height: 512px;
+
+    .result {
+      width: 50%;
+      height: 100%;
+      border-radius: 30px;
+      padding: 36px 60px;
+
+      h3 {
+        font-size: 25px;
+      }
+
+      .circle {
+        width: 200px;
+        height: 200px;
+
+        h1 {
+          font-size: 75px;
+          font-weight: weight(bold);
+        }
+      }
+
+      .remarks {
+        h2 {
+          font-size: 32px;
+          margin-bottom: 16px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .summary {
+      width: 50%;
+      padding: 37px 40px 46px 40px;
+
+      h3 {
+        font-size: 25px;
+      }
+
+      #cards-container {
+        margin: 32px 0 41px 0;
+
+        .card {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
