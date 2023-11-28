@@ -1,0 +1,13 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@function fontSize($value) {
+  @return map-get($font_sizes, $value);
+}
+
+@function fontWeight($value) {
+  @return map-get($font_weights, $value);
+}
