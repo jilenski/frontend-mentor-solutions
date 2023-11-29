@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -21,22 +21,19 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshots
 
-|         Web View         |       Mobile View       |
-| :----------------------: | :---------------------: |
-|  ![](./ss-desktop.png)   |  ![](./ss-mobile.png)   |
-| ![](./ss-desktop-ty.png) | ![](./ss-mobile-ty.png) |
+|       Web View        |     Mobile View      |
+| :-------------------: | :------------------: |
+| ![](./ss-desktop.png) | ![](./ss-mobile.png) |
 
 ### Links
 
-- Solution URL: [Codes](https://github.com/jilenski/frontend-mentor-solutions/tree/main/interactive-rating-component)
-- Live Site URL: [Live View](https://jilenski.github.io/frontend-mentor-solutions.github.io/interactive-rating-component/index.html)
+- Solution URL: [Codes](https://github.com/jilenski/frontend-mentor-solutions/tree/main/nft-preview-card-component)
+- Live Site URL: [Live View](https://jilenski.github.io/frontend-mentor-solutions.github.io/nft-preview-card-component/index.html)
 
 ## My process
 
@@ -47,7 +44,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- Vanilla JavaScript
 
 ### What I learned
 
@@ -55,11 +51,9 @@ Users should be able to:
 - I am also using SASS pre-processor to custom CSS.
 - I learned how it is easy to custom CSS by doing Mobile-first workflow.
 - The design is simple and beginner-friendly and suitable for familiarizing myself with coding web components.
-- I learned how to manipulate component content or state using Vanilla JavaScript.
 
 ### Continued development
 
-- I am planning to add transition effects upon submitting and displaying the acknoledgement message.
 - I am currently studying React for frontend development so after this I am planning to convert every component design with React framework.
 
 ### Useful resources

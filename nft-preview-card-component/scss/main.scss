@@ -1,0 +1,170 @@
+@import './config';
+@import './mixins';
+
+body {
+  background: $background_body;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  background: $very_dark_blue_card;
+  box-shadow: 5px 30px 50px 0 hsla(217,55%,10%),
+      0px 24px 80px 20px hsla(217,55%,10%);
+  border-radius: 15px;
+  font-family: 'Outfit', sans-serif;
+  margin: 61px 24px;
+  padding: 25px 23px;
+
+  .hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 22px;
+    cursor: pointer;
+
+    .hero-image {
+      display: block;
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      border-radius: 8px;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: hsla(178, 100%, 50%, 0.5);
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .overlay-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  h1 {
+    font-size: 22px;
+    color: $white;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  .description {
+    color: $soft_blue;
+    font-weight: fontWeight(light);
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .eth {
+      display: inline-flex;
+      align-items: center;
+      font-size: 16px;
+      letter-spacing: -0.32px;
+      gap: 10px;
+
+      img {
+        width: auto;
+      }
+
+      p {
+        color: $cyan;
+        font-weight: fontWeight(bold);
+      }
+    }
+
+    .timer {
+      @extend .eth;
+
+      p {
+        color: $soft_blue;
+        font-weight: fontWeight(regular);
+      }
+    }
+  }
+
+  hr {
+    border: 0.5px solid $very_dark_blue_line;
+    margin-bottom: 17px;
+  }
+
+  .author {
+    display: inline-flex;
+    align-items: center;
+
+    img {
+      border: 1px solid $white;
+      border-radius: 50%;
+      width: 31px;
+    }
+
+    p {
+      color: $soft_blue;
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      margin-left: 17px;
+      font-weight: fontWeight(light);
+
+      span {
+        color: $white;
+        font-weight: fontWeight(regular);
+        cursor: pointer;
+
+        &:hover {
+          color: $cyan;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 376px) {
+  body {
+    justify-content: center;
+    height: 100dvh;
+  }
+
+  main {
+    max-width: 350px;
+
+    .hero {
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+    }
+
+    .description {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    .details {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@import './footer';

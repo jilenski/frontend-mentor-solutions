@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+
+// Colors - Primary
+$soft_blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+// Colors - Neutral
+$background_body: hsl(216, 55%, 11%);
+$very_dark_blue_main: hsl(217, 54%, 11%);
+$very_dark_blue_card: hsl(216, 50%, 16%);
+$very_dark_blue_line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// Typography - Font
+$font_weights: (
+  'light': 300,
+  'regular': 400,
+  'bold': 600,
+);
