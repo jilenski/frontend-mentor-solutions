@@ -1,0 +1,186 @@
+@import './config';
+@import './mixins';
+
+body {
+  @include flex(column, center, center);
+  font-family: 'Open Sans', sans-serif;
+}
+
+@import './header';
+
+main {
+  @include flex(column, center, center);
+  margin: 6.75rem 0 0 0;
+  color: $very_dark_cyan;
+
+  .btn-main {
+    background: $pink;
+    box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.2);
+    border: none;
+    border-radius: 3.125rem;
+    font-family: inherit;
+    color: $very_pale_blue;
+    font-size: 0.75rem;
+    letter-spacing: 0.02rem;
+    width: 12.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background: $light_pink;
+    }
+  }
+
+  section#hero {
+    text-align: center;
+    margin: 0 2rem;
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 0 1.5rem 0;
+    }
+
+    p.description {
+      font-size: 0.875rem;
+      line-height: 150%;
+      margin: 0 0 3rem 0;
+    }
+
+    img.img-hero {
+      width: 96.5%;
+      margin: 6.4rem 0 1.9rem 0;
+    }
+  }
+
+  section#banner {
+    .statistics {
+      @include flex(column, flex-start, center);
+      margin: 5.75rem 0 0.25rem 0;
+
+      img {
+        margin-right: auto;
+        width: auto;
+        height: 1.5rem;
+      }
+
+      strong {
+        font-size: 3.75rem;
+        margin: 0 0 0.4rem 0;
+      }
+
+      p {
+        opacity: 0.5;
+        font-size: 0.875rem;
+        letter-spacing: 0.03rem;
+      }
+    }
+  }
+
+  section#contents {
+    .content-container {
+      @include flex(column, center, center);
+      text-align: center;
+      height: 100dvh;
+      position: relative;
+
+      img {
+        width: 70%;
+        margin: 0 0 5rem 0;
+      }
+
+      .content-details {
+        h2 {
+          font-size: 1.25rem;
+          margin: 0 0 0.9rem 0;
+        }
+
+        p {
+          font-size: 0.875rem;
+          line-height: 150%;
+          padding: 0 2rem;
+        }
+      }
+    }
+
+    /* Target odd child divs */
+    > div:nth-child(odd) {
+      background: $very_pale_blue;
+      background-clip: content-box;
+    }
+
+    /* Target first child div directly */
+    > div:first-child {
+      padding: 7rem 0 3.25rem 0;
+
+      /* Apply pseudo-elements to the first child div */
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20%;
+      }
+
+      /* Style the ::before pseudo-element */
+      &::before {
+        background: url('../images/bg-section-top-mobile-1.svg') top center /
+          100% auto no-repeat;
+        top: 0;
+        left: 0;
+      }
+
+      /* Style the ::after pseudo-element */
+      &::after {
+        background: url('../images/bg-section-bottom-mobile-1.svg') bottom
+          center / 100% auto no-repeat;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    /* Target the last child div directly */
+    > div:last-child {
+      padding: 6.4375rem 0 6rem 0;
+
+      /* Apply pseudo-elements to the last child div */
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20%;
+      }
+
+      /* Style the ::before pseudo-element */
+      &::before {
+        background: url('../images/bg-section-top-mobile-2.svg') top center /
+          100% auto no-repeat;
+        top: 0;
+        left: 0;
+      }
+
+      /* Style the ::after pseudo-element */
+      &::after {
+        background: url('../images/bg-section-bottom-mobile-2.svg') bottom
+          center / 100% auto no-repeat;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  section#end {
+    @include flex(column, flex-start, center);
+    text-align: center;
+    height: 29rem;
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 4.1rem 0 2.3rem 0;
+    }
+  }
+}
+
+@import './footer';
+
+@import './desktop';

@@ -1,0 +1,149 @@
+footer {
+  background: $very_dark_cyan;
+  color: $very_pale_blue;
+  padding: 3.3125rem 0 0 0;
+  background-clip: content-box;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url('../images/bg-footer-top-mobile.svg') top center / 100% auto
+      no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+  }
+
+  div {
+    margin: 0 1.6rem;
+  }
+
+  .footer-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+  }
+
+  .newsletter {
+    @include flex(column, flex-start, flex-start);
+    margin-top: 3.8rem;
+    margin-bottom: 6.5rem;
+    position: relative;
+
+    .form-heading {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      margin: 0 0 1.2rem;
+    }
+    .footer-paragraph {
+      margin: 0 1.5rem 1.8rem 0;
+    }
+
+    form {
+      @include flex(column, center, flex-end);
+      width: 100%;
+
+      input {
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 0.3rem;
+        color: $very_dark_cyan;
+        font-family: inherit;
+        font-size: 1rem;
+        letter-spacing: -0.06rem;
+        padding: 0.75rem 1rem;
+        width: 100%;
+        height: 3rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .error-outline {
+        outline: auto;
+        outline-color: $light_red;
+      }
+
+      #btn-sub {
+        background: $pink;
+        border: none;
+        border-radius: 0.3rem;
+        color: $very_pale_blue;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: fontWeight(semibold);
+        letter-spacing: 0.03rem;
+        width: 10rem;
+        height: 3rem;
+        cursor: pointer;
+
+        &:hover {
+          background: $light_pink;
+        }
+      }
+    }
+
+    #error-message {
+      position: absolute;
+      bottom: 2rem;
+      left: 0;
+      color: $light_red;
+      font-size: 0.875rem;
+      letter-spacing: -0.05rem;
+      visibility: hidden;
+    }
+  }
+
+  .company {
+    .footer-logo {
+      height: 2rem;
+      margin: 0 0 1rem 0;
+    }
+
+    .footer-paragraph {
+      margin: 0 1rem 2.5rem 0;
+    }
+
+    .contacts {
+      display: flex;
+      align-items: center;
+      font-size: 0.8rem;
+      gap: 1.2rem;
+      margin: 0 0 1rem 0;
+
+      img {
+        width: 1.25rem;
+      }
+    }
+
+    .socials {
+      margin: 3rem 0 2.8rem 0;
+      cursor: pointer;
+
+      .fa-brands {
+        font-size: 1.5rem;
+        margin: 0 1rem 0 0;
+
+        &:hover {
+          color: #00c7fa;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    font-size: 8px;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+
+    a {
+      // color: hsl(228, 45%, 44%);
+      color: $light_pink;
+    }
+  }
+}

@@ -1,0 +1,201 @@
+@media (min-width: 433px) {
+  header,
+  main,
+  footer {
+    max-width: 1440px;
+  }
+
+  header {
+    margin: 4.9rem 0 0 0;
+    padding: 0 5rem;
+
+    img.logo {
+      width: 15rem;
+      height: auto;
+    }
+    button.btn-trial {
+      width: 8.5rem;
+      height: 2.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  main {
+    margin: 14.5rem 0 0 0;
+
+    .btn-main {
+      font-size: 1.25rem;
+      letter-spacing: 0.04rem;
+      width: 25rem;
+      height: 5rem;
+    }
+
+    section#hero {
+      margin: 0 12.6rem;
+
+      h1 {
+        font-size: 2.875rem;
+        letter-spacing: 0.06rem;
+      }
+
+      p.description {
+        font-size: 1.25rem;
+        margin: 0 12.5rem 3rem 12.5rem;
+      }
+
+      img.img-hero {
+        margin: 6.8rem 0 0 0;
+      }
+    }
+
+    section#banner {
+      @include flex(row, center, center);
+      gap: 21.3rem;
+
+      .statistics {
+        margin: 7.5rem 0;
+
+        img {
+          width: 3rem;
+          height: auto;
+        }
+
+        strong {
+          font-size: 6rem;
+          margin: 0 0 0.6rem 0;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    section#contents {
+      .content-container {
+        @include flex(row, center, center);
+        text-align: start;
+
+        img {
+          width: 35%;
+          margin: 0 9.4rem;
+        }
+
+        .content-details {
+          margin: 0 0 0 8.2rem;
+
+          h2 {
+            font-size: 2.5rem;
+            margin: 0 0 1.4rem 0;
+          }
+
+          p {
+            font-size: 1rem;
+            letter-spacing: -0.02rem;
+            padding: 0;
+          }
+        }
+      }
+
+      > div:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
+      > div:first-child {
+        padding: 10rem 0 8.7rem 0;
+
+        &::before {
+          background: url('../images/bg-section-top-desktop-1.svg') top center /
+            100% auto no-repeat;
+        }
+
+        &::after {
+          background: url('../images/bg-section-bottom-desktop-1.svg') bottom
+            center / 100% auto no-repeat;
+        }
+      }
+
+      > div:nth-child(2) {
+        .content-details {
+          margin: 0 8.2rem 0 0;
+        }
+      }
+
+      > div:last-child {
+        padding: 9.7rem 0 8.7rem 0;
+
+        &::before {
+          background: url('../images/bg-section-top-desktop-2.svg') top center /
+            100% auto no-repeat;
+        }
+
+        &::after {
+          background: url('../images/bg-section-bottom-desktop-2.svg') bottom
+            center / 100% auto no-repeat;
+        }
+      }
+    }
+
+    section#end {
+      height: 32.5rem;
+
+      h2 {
+        font-size: 2.5rem;
+        margin: 10.3rem 0 2.5rem 0;
+      }
+    }
+  }
+
+  footer {
+    @include flex(row-reverse, center, center);
+    padding: 9.8rem 0 0 0;
+
+    &::before {
+      background: url('../images/bg-footer-top-desktop.svg') top center / 100%
+        auto no-repeat;
+    }
+
+    div {
+      margin: 7.5rem;
+    }
+
+    .newsletter {
+      margin-top: 0;
+
+      .form-heading {
+        font-size: 1.4rem;
+        margin: 0.4 0 1.4rem 0;
+      }
+
+      .footer-paragraph {
+        margin: 0 12rem 2.6rem 0;
+      }
+
+      form {
+        @include flex(row, center, flex-start);
+        gap: 2.44rem;
+      }
+
+      #error-message {
+        bottom: -0.5rem;
+      }
+    }
+
+    .company {
+      .footer-logo {
+        width: 15rem;
+        height: auto;
+      }
+
+      .footer-paragraph {
+        margin: 0 8rem 2.5rem 0;
+      }
+
+      .socials {
+        .fa-brands {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

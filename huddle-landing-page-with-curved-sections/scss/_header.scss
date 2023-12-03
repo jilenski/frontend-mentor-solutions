@@ -1,0 +1,28 @@
+header {
+  @include flex(row, space-between, center);
+  width: 100dvw;
+  margin: 1rem 0 0 0;
+  padding: 0.4375rem 1.5rem;
+
+  img.logo {
+    width: 6rem;
+    height: auto;
+  }
+
+  button.btn-trial {
+    background: #fff;
+    color: $pink;
+    font-family: inherit;
+    font-size: 0.625rem;
+    border: 1px solid $pink;
+    border-radius: 1.25rem;
+    width: 5rem;
+    height: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $light_pink;
+      color: $light_pink;
+    }
+  }
+}
