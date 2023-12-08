@@ -1,0 +1,100 @@
+footer {
+  position: relative;
+  @include layout(grid);
+  @include font-style(light_grayish_blue, $family: body, $size: 17px, $spacing: -0.5px);
+  @include background(very_dark_blue);
+  @include spacing($padding: 65px 40px);
+  img {
+    width: 176px;
+    height: auto;
+  }
+  .footer-container {
+    @include layout(flex, $direction: column);
+    .contacts {
+      @include layout(flex, $direction: column);
+      @include spacing(40px 0 55px, $gap: 16px);
+      img {
+        width: 18px;
+        @include spacing(0 20px 0 0);
+      }
+    }
+    .site-map div {
+      @include spacing(45px 0);
+      ul {
+        list-style-type: none;
+        li {
+          @include spacing(14px 0);
+          cursor: pointer;
+          &:hover {
+            color: darken(getColor(light_grayish_blue), 30%);
+          }
+        }
+      }
+    }
+    .socials {
+      align-self: center;
+      @include layout(flex);
+      @include spacing(7px 0, $gap: 13px);
+      .fa-brands {
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        font-size: 10px;
+        @include spacing($padding: 6px 6px);
+        @include border(50%, light_grayish_blue);
+        cursor: pointer;
+        &:hover {
+          @include border($color: darken(getColor(light_grayish_blue), 30%));
+          color: darken(getColor(light_grayish_blue), 30%);
+        }
+      }
+    }
+  }
+  .attribution {
+    justify-self: center;
+    color: getColor(light_gray);
+    position: absolute;
+    background: transparent;
+    font-size: 8px;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+
+    a {
+      // color: hsl(228, 45%, 44%);
+      color: getColor(light_grayish_blue);
+    }
+  }
+  @include device(tablet_landscape) {
+    @include spacing($padding: 108px 80px);
+    .footer-container {
+      @include layout(grid, $col: repeat(3, 1fr));
+      @include spacing(30px 0 0 0);
+      .contacts {
+        @include spacing(0);
+      }
+      .site-map {
+        @include layout(flex, $direction: row, $justify: space-between);
+        div {
+          @include spacing(0);
+          ul {
+            li {
+              @include spacing(0 0 14px);
+            }
+          }
+        }
+      }
+      .socials {
+        align-self: start;
+        justify-self: center;
+        @include spacing(7px 0, $gap: 15px);
+        .fa-brands {
+          width: 30px;
+          height: 30px;
+          font-size: 14px;
+          @include spacing($padding: 7px 7px);
+        }
+      }
+    }
+  }
+}

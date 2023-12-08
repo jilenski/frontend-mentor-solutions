@@ -1,0 +1,57 @@
+// Grid Layout Properties
+@mixin layout($display: null, $col: null, $direction: null, $justify: null, $align: null) {
+  display: $display;
+  grid-template-columns: $col;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+// Dimension properties
+@mixin dimension($width: null, $height: null) {
+  @if $width != null {
+    width: toRem($width);
+  }
+  @if $height != null {
+    height: toRem($height);
+  }
+}
+// Typography properties
+@mixin font-style($color: null, $align: null, $family: null, $size: inherit, $weight: null, $height: null, $spacing: null) {
+  color: getColor($color);
+  text-align: $align;
+  font: {
+    family: map-get($fonts, families, $family);
+    size: toRem($size);
+    weight: map-get($fonts, weights, $weight);
+  }
+  line-height: $height;
+  @if $spacing != null {
+    letter-spacing: toRem($spacing);
+  }
+}
+// Background properties
+@mixin background($color: null) {
+  background-color: getColor($color);
+}
+// Spacing properties
+@mixin spacing($margin: null, $padding: null, $gap: null) {
+  @if $margin != null {
+    margin: toRem($margin);
+  }
+  @if $padding != null {
+    padding: toRem($padding);
+  }
+  @if $gap != null {
+    gap: toRem($gap);
+  }
+}
+// Border properties
+@mixin border($radius: null, $color: null) {
+  border-radius: toRem($radius);
+  @if $color == null {
+    border: none;
+  } @else {
+    border: 1px solid getColor($color);
+  }
+  outline: none;
+}

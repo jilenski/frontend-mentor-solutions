@@ -1,0 +1,30 @@
+// Breakpoints
+@mixin device($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+// px to rem conversion
+@function toRem($px) {
+  $non_zero: ();
+  $i_origin: ();
+
+  @for $i from 1 through length($px) {
+    $value: nth($px, $i);
+    @if type-of($value) == 'number' and unit($value) == 'px' {
+      $rem_value: calc($value / $base_font_size) + rem;
+      $non_zero: append($non_zero, $rem_value);
+      $i_origin: append($i_origin, $i);
+    }
+  }
+
+  @each $value, $origin in zip($non_zero, $i_origin) {
+    $px: set-nth($px, $origin, $value);
+  }
+
+  @return $px;
+}
+// Color mapping
+@function getColor($color) {
+  @return map-get($colors, $color);
+}

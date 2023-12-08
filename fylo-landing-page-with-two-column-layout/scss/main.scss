@@ -1,0 +1,299 @@
+@import './config';
+@import './functions';
+@import './layout';
+
+form {
+  @include layout(flex, $direction: column);
+  @include spacing($margin: 32px 0 0 0, $padding: 0 35px, $gap: 17px);
+  position: relative;
+  input {
+    @include font-style(very_dark_blue, $family: body, $size: 12px);
+    @include spacing($padding: 11px 20px);
+    @include border($radius: 3px, $color: desaturated_blue);
+    &.error-outline {
+      border: 1px solid lightcoral;
+    }
+  }
+  .error-message {
+    @include font-style($family: body, $size: 10px);
+    color: lightcoral;
+    position: absolute;
+    top: 42%;
+    visibility: hidden;
+  }
+  button {
+    @include font-style(light_grayish_blue, $family: heading, $size: 14px, $weight: bold);
+    @include background(bright_blue);
+    box-shadow: 3px 3px 5px 0 hsla(0, 0%, 0%, 0.15);
+    @include spacing($padding: 11px 0);
+    @include border($radius: 3px);
+    cursor: pointer;
+    &:hover {
+      background-color: lighten(getColor(bright_blue), 10%);
+    }
+  }
+}
+@include device(tablet_landscape) {
+  form {
+    @include layout(flex, $direction: row, $justify: flex-start);
+    @include spacing($margin: 26px 0 0 0, $padding: 0 55px 0 0, $gap: 18px);
+    input {
+      @include font-style($size: 14px, $spacing: 0.5px);
+      @include spacing($padding: 13px 20px);
+      flex: 1;
+    }
+    .error-message {
+      @include font-style($family: body, $size: 12px);
+      top: 110%;
+    }
+    button {
+      @include spacing($padding: 10px 60px);
+    }
+  }
+}
+header {
+  @include layout(grid, $col: auto auto, $align: center);
+  @include font-style(very_dark_blue, $family: heading, $size: 12px);
+  @include spacing($margin: 24px 0 0, $padding: 0 24px);
+  img {
+    width: 80px;
+    height: auto;
+  }
+  nav {
+    justify-self: end;
+    ul {
+      display: flex;
+      @include spacing($gap: 24px);
+      list-style-type: none;
+    }
+  }
+  @include device(tablet_landscape) {
+    @include font-style($size: 17px);
+    @include spacing($margin: 65px 0 0, $padding: 0 80px);
+    img {
+      width: 166px;
+    }
+    nav ul {
+      @include spacing($gap: 56px);
+    }
+  }
+}
+main {
+  .hero {
+    @include layout(grid, $col: auto);
+    @include spacing($margin: 98px 0 89px 0);
+    figure {
+      @include layout(flex, $justify: center);
+      img {
+        width: 80%;
+      }
+    }
+    article {
+      h1 {
+        @include font-style(very_dark_blue, $align: center, $family: heading, $size: 24px, $weight: bold, $height: 150%, $spacing: 0.5px);
+        @include spacing($margin: 41px 0 15px 0, $padding: 0 20px 0 30px);
+      }
+      p {
+        @include font-style(very_dark_blue, $align: center, $family: body, $size: 14px, $weight: regular, $height: 150%, $spacing: null);
+        @include spacing($padding: 0 42px);
+      }
+    }
+
+    @include device(tablet_landscape) {
+      @include layout(grid, $col: repeat(2, 1fr));
+      @include spacing($margin: 86px 0 163px 0, $padding: 0 80px);
+      figure {
+        grid-column: 2;
+        img {
+          width: 100%;
+        }
+      }
+      article {
+        grid-row: 1;
+        grid-column: 1;
+        h1 {
+          @include font-style($align: start, $size: 40px, $height: 150%, $spacing: 0.1px);
+          @include spacing($margin: 77px 0 15px 0, $padding: 0);
+        }
+        p {
+          @include font-style($align: start, $size: 18px, $height: 135%);
+          @include spacing($padding: 0 30px 0 0);
+        }
+      }
+    }
+  }
+  .main-content {
+    @extend .hero;
+    background-color: lighten(getColor(light_grayish_blue), 0.5%);
+    background-clip: content-box;
+    @include spacing($margin: 0, $padding: 14% 0 0);
+    position: relative;
+    figure {
+      @include spacing($margin: 40px 0 88px 0);
+      img {
+        width: 85%;
+      }
+    }
+    article {
+      @include layout(flex, $direction: column, $align: center);
+      @include spacing($padding: 0 20px);
+      h2 {
+        @include font-style(very_dark_blue, $align: center, $family: heading, $size: 16px, $weight: bold);
+        @include spacing(0 0 26px 0);
+      }
+      p {
+        text-align: start;
+        @include spacing(16px 0 0 0, $padding: 0 15px 0 0);
+      }
+      a {
+        @include layout(flex, $align: center);
+        @include font-style(moderate_cyan, $family: body, $size: 12px);
+        @include spacing(32px 0 0 0, 7px 0, 5px);
+        border-bottom: 1.5px solid getColor(moderate_cyan);
+        text-decoration: none;
+      }
+      .testimonial-card {
+        @include dimension(75%, auto);
+        background-color: white;
+        box-shadow: 1px 1px 50px 1px hsla(0, 0%, 0%, 0.05);
+        @include spacing(40px 0 82px 0, $padding: 20px 15px 20px 25px);
+        @include border($radius: 5px);
+        p {
+          @include font-style($size: 10px);
+          @include spacing(0 0 12px);
+        }
+        .author {
+          @include layout(flex);
+          img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+          }
+          cite {
+            @include font-style(very_dark_blue, $family: body, $size: 9px, $weight: bold, $spacing: 0.5px);
+            @include spacing(0 0 0 7px);
+            span {
+              @include font-style($size: 6px, $weight: regular);
+            }
+          }
+        }
+      }
+    }
+    &::before {
+      content: '';
+      background: url('../images/bg-curve-mobile.svg') top center/100% auto no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    @include device(tablet_landscape) {
+      @include layout(grid, $col: repeat(2, auto));
+      @include spacing($padding: 7% 0 0);
+      figure {
+        @include spacing(0 80px 0 0);
+        justify-content: end;
+        img {
+          width: 95%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      article {
+        @include layout($align: flex-start);
+        @include spacing(0 0 0 80px, 0 0);
+        h2 {
+          @include font-style($size: 40px, $spacing: 0.3px);
+          @include spacing(58px 0 0 0);
+        }
+        p {
+          @include font-style($size: 16px, $height: 150%);
+          @include spacing($padding: 0 200px 0 0);
+        }
+        a {
+          @include font-style($size: 16px);
+        }
+        .testimonial-card {
+          @include dimension(356px, 215px);
+          @include spacing(45px 0 107px, $padding: 25px 33px 25px 39px);
+          p {
+            @include spacing(0, $padding: 0);
+            @include font-style($size: 14px);
+          }
+          .author {
+            img {
+              width: 32px;
+              height: 32px;
+            }
+            cite {
+              @include font-style($size: 11px);
+              @include spacing(0 0 0 8px);
+              span {
+                @include font-style($size: 8px);
+              }
+            }
+          }
+        }
+      }
+      &::before {
+        background: url('../images/bg-curve-desktop.svg') top center/100% auto no-repeat;
+      }
+    }
+  }
+  .cta {
+    @include layout(grid);
+    @include font-style(light_grayish_blue, center);
+    @include background(desaturated_blue);
+    @include spacing($padding: 55px 55px 72px 32px);
+    article {
+      h2 {
+        @include font-style($family: heading, $size: 18px, $weight: bold);
+      }
+      p {
+        @include font-style($family: body, $size: 14px, $height: 150%);
+        @include spacing(17px 0 13px);
+      }
+    }
+    form {
+      @include spacing(0, 0 14px 0 34px);
+      .error-message {
+        top: 45%;
+      }
+      button {
+        @include font-style($size: 10px);
+      }
+    }
+    @include device(tablet_landscape) {
+      @include layout($col: repeat(2, 1fr));
+      @include font-style($align: start);
+      @include spacing($padding: 87px 80px);
+      article {
+        @include spacing($padding: 0 120px 0 0);
+        h2 {
+          @include font-style($size: 32px, $spacing: 0.2px);
+          @include spacing(18px 0 21px);
+        }
+        p {
+          @include font-style($size: 16px);
+          @include spacing(0);
+        }
+      }
+      form {
+        @include layout(flex, $direction: column);
+        @include spacing(0, 25px 40px 11px 120px, 16px);
+        input {
+          @include dimension(480px);
+          @include spacing($padding: 12 22px);
+        }
+        button {
+          @include dimension(200px);
+          @include font-style($size: 14px);
+          @include spacing($padding: 16px 32px);
+        }
+      }
+    }
+  }
+}
+@import './footer';
