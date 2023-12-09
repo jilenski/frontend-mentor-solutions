@@ -42,9 +42,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - SASS pre-processor
 - CSS custom properties
-- Grid Layout and Flexbox
 - Mobile-first workflow
-- Vanilla JavaScript
 
 ### What I learned
 
