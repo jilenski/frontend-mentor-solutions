@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/** Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+/** Variables */
+$breakpoints: (
+  small: 320px,
+  large: 992px,
+);
+$colors: (
+  violet: hsl(257, 40%, 49%),
+  soft_magenta: hsl(300, 69%, 71%),
+);
+$fonts: (
+  families: (
+    heading: (
+      'Poppins',
+      sans-serif,
+    ),
+    body: (
+      'Open Sans',
+      sans-serif,
+    ),
+  ),
+  weights: (
+    regular: 400,
+    bold: 600,
+  ),
+);
+$base_font_size: 16px;
+
+/** Unit convertion px-rem*/
+@function rem($px) {
+  $non_zero: ();
+  $i_origin: ();
+  @for $i from 1 through length($px) {
+    $value: nth($px, $i);
+    @if type-of($value) == 'number' and unit($value) == 'px' {
+      $rem_value: calc($value / $base_font_size) + rem;
+      $non_zero: append($non_zero, $rem_value);
+      $i_origin: append($i_origin, $i);
+    }
+  }
+  @each $value, $origin in zip($non_zero, $i_origin) {
+    $px: set-nth($px, $origin, $value);
+  }
+  @return $px;
+}
+
+/** Mapping variables */
+@function color($color) {
+  @return map-get($colors, $color);
+}
+@function font($font) {
+  @return map-get($fonts, families, $font);
+}
+@function weight($weight) {
+  @return map-get($fonts, weights, $weight);
+}
+
+/** Mixins */
+@mixin device($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+/** Repetitive properties */
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+%items-center-x {
+  display: flex;
+  justify-content: center;
+}
+%color-align {
+  color: white;
+  text-align: center;
+}
+
+/** Mobile */
+body {
+  @extend %flex-column;
+  background: color(violet) url('../images/bg-mobile.svg') top center/cover no-repeat;
+  padding: rem(40px 35px 0);
+}
+.logo {
+  width: 120px;
+}
+main {
+  @extend %flex-column;
+  .illustration {
+    width: 100%;
+    margin: rem(66px 0 60px);
+  }
+
+  section {
+    @extend %flex-column;
+    h1 {
+      @extend %color-align;
+      font: weight(bold) rem(24px) font(heading);
+    }
+    p {
+      @extend %color-align;
+      font: weight(regular) rem(16px) / 150% font(body);
+      margin: rem(13px 0 24px);
+    }
+    button {
+      width: 200px;
+      color: color(violet);
+      font: rem(12px) font(heading);
+      margin: auto;
+      padding: rem(15px 0);
+      border: none;
+      border-radius: rem(50px);
+      box-shadow: 3px 3px 10px 0 hsla(0, 0%, 0%, 0.3);
+      cursor: pointer;
+      &:hover {
+        color: white;
+        background-color: color(soft_magenta);
+      }
+    }
+  }
+}
+footer {
+  @extend %flex-column;
+  .socials {
+    @extend %items-center-x;
+    margin: rem(65px 0);
+    gap: rem(11px);
+    .fa-brands {
+      @extend %items-center-x;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+      color: white;
+      font-size: 12px;
+      border: 1px solid white;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        color: darken(color(soft_magenta), 15%);
+        border-color: darken(color(soft_magenta), 15%);
+      }
+    }
+  }
+  .attribution {
+    color: color(soft_magenta);
+    background: transparent;
+    font-size: rem(8px);
+    text-align: center;
+    margin-bottom: rem(5px);
+    a {
+      // color: hsl(228, 45%, 44%);
+      color: white;
+    }
+  }
+}
+
+/** Desktop */
+@include device(large) {
+  body {
+    height: 100vh;
+    background-image: url(../images/bg-desktop.svg);
+    padding: rem(65px 80px 0);
+  }
+  .logo {
+    width: 200px;
+  }
+  main {
+    flex-direction: row;
+    .illustration {
+      margin: rem(96px 0 0);
+    }
+    section {
+      padding: rem(140px 0 0 50px);
+      h1,
+      p {
+        text-align: start;
+      }
+      h1 {
+        font-size: rem(39px);
+      }
+      p {
+        font-size: rem(18px);
+        margin-top: 20px;
+      }
+      button {
+        font-size: rem(18px);
+        margin: rem(0);
+      }
+    }
+  }
+  footer {
+    flex: 1;
+    .socials {
+      justify-self: center;
+      align-self: end;
+      margin: auto 0;
+      .fa-brands {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+    }
+  }
+}
