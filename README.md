@@ -26,7 +26,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
       </a>
     </td>
     <td>
-      <a href="./results-summary-component/l">
+      <a href="./results-summary-component/">
         <img src="././results-summary-component/desktop-preview.jpg" alt="preview">
       </a>
     </td>
@@ -38,9 +38,9 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
   </tr>
 
   <tr>
-    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//qr-code-component/">Interactive Rating Component</a></th>
-    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//results-summary-component/">NFT Preview Card Component</a></th>
-    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//product-preview-card-component/">Order Summary Component</a></th>
+    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//interactive-rating-component/">Interactive Rating Component</a></th>
+    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//nft-preview-card-component/">NFT Preview Card Component</a></th>
+    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//order-summary-component/">Order Summary Component</a></th>
   </tr>
   <tr>
     <td>
@@ -59,6 +59,19 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
       </a>
     </td>
   </tr>
+
+  <tr>
+    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//huddle-landing-page-with-single-introductory-section/">Huddle Landing Page with Single Introductory Section</a></th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./interactive-rating-component/">
+        <img src="././huddle-landing-page-with-single-introductory-section/desktop-preview.jpg" alt="preview">
+      </a>
+    </td>
+    
+  </tr>
+  
 </table>
 
 ### Junior
