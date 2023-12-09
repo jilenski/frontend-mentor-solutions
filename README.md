@@ -65,7 +65,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
   </tr>
   <tr>
     <td>
-      <a href="./interactive-rating-component/">
+      <a href="./huddle-landing-page-with-single-introductory-section/">
         <img src="././huddle-landing-page-with-single-introductory-section/desktop-preview.jpg" alt="preview">
       </a>
     </td>
