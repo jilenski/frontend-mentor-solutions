@@ -16,3 +16,5 @@
 
 docs/*
 !docs/desktop-preview.jpg
+!docs/ss-desktop.png
+!docs/ss-mobile.png

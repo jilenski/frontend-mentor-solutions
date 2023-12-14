@@ -94,7 +94,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
       </a>
     </td>
     <td>
-      <a href="./fylo-dark-theme-landing-page/">
+      <a href="./fylo-dark-theme-landing-page/build/">
         <img src="././fylo-dark-theme-landing-page/docs/desktop-preview.jpg" alt='preview'>
       </a>
     </td>
