@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.banner {
+  display: grid;
+  padding-inline: rem(20px);
+
+  .feature {
+    @extend %vflex-centertxt;
+    margin-bottom: rem(86px);
+
+    figure img {
+      width: 80%;
+    }
+
+    h4 {
+      margin-block: rem(34px 11px);
+    }
+
+    p {
+      padding-inline: rem(5px);
+    }
+  }
+
+  @include device(large) {
+    grid-template-columns: repeat(2, auto);
+    padding-inline: rem(277px);
+
+    .feature {
+      margin-bottom: rem(98px);
+
+      figure img {
+        width: auto;
+      }
+
+      h4 {
+        font-size: rem(20px);
+        margin-block: rem(28px 9px);
+      }
+
+      p {
+        padding-inline: rem(40px);
+      }
+    }
+  }
+}

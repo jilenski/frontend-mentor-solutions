@@ -1,0 +1,46 @@
+@use '../abstracts/' as *;
+
+.testimonial-card {
+  background-color: color(dark_blue_testimonials);
+  box-shadow: 3px 3px 10px 0 (color(dark_blue));
+  margin-bottom: rem(24px);
+  padding: rem(24px 20px);
+  border-radius: rem(3px);
+
+  p {
+    font-size: rem(10px);
+    margin-bottom: rem(16px);
+    line-height: 180%;
+  }
+
+  .author {
+    display: flex;
+
+    img {
+      width: 25px;
+      border-radius: 50%;
+    }
+
+    h5 {
+      font-size: rem(10px);
+      margin-left: rem(7px);
+    }
+
+    span {
+      display: block;
+      font-size: 6px;
+      margin-top: rem(5px);
+    }
+  }
+
+  @include device(large) {
+    border-radius: rem(5px);
+
+    p {
+      font-size: rem(14px);
+      margin-block: rem(20px 23px);
+      padding-right: rem(20px);
+      line-height: 150%;
+    }
+  }
+}

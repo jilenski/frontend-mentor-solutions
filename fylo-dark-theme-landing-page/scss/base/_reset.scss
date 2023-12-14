@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  color: color(white);
+  background-color: map-get($colors, dark_blue);
+  position: relative;
+}

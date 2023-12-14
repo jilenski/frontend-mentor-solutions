@@ -1,0 +1,108 @@
+@use '../abstracts' as *;
+
+.hero {
+  @extend %vflex-centertxt;
+  margin-block: rem(50px 130px);
+  padding-inline: rem(35px);
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    padding-inline: rem(3px);
+  }
+
+  @include device(large) {
+    margin-block: rem(73px 167px);
+
+    img {
+      width: auto;
+    }
+
+    h1,
+    p {
+      max-width: rem(720px);
+    }
+
+    p {
+      font-size: rem(20px);
+      padding-inline: rem(50px);
+    }
+  }
+}
+
+.content {
+  @include v-flex(center);
+  margin-block: rem(155px);
+  padding-inline: rem(20px);
+
+  img {
+    width: 90%;
+  }
+
+  h2 {
+    margin-block: rem(50px 18px);
+    padding-left: rem(12px);
+  }
+
+  p {
+    margin-bottom: rem(16px);
+    padding-left: rem(7px);
+  }
+
+  @include device(large) {
+    flex-direction: row;
+    margin-block: rem(135px 144px);
+    padding-inline: rem(103px 114px);
+
+    img {
+      width: auto;
+    }
+
+    div {
+      padding-left: rem(55px);
+    }
+
+    h2 {
+      font-size: rem(40px);
+      line-height: 125%;
+      padding-inline: rem(0 30%);
+    }
+
+    p {
+      font-size: rem(16px);
+      padding-left: rem(0);
+    }
+
+    .link {
+      font-size: rem(16px);
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.testimonials {
+  padding-inline: rem(48px);
+
+  .quotes {
+    width: 21px;
+  }
+
+  @include device(large) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: rem(39px);
+    padding-inline: rem(140px);
+    position: relative;
+
+    .quotes {
+      width: auto;
+      position: absolute;
+      top: -37px;
+      left: 133px;
+      z-index: -1;
+    }
+  }
+}

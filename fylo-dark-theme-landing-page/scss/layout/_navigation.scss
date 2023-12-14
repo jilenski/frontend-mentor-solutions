@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+nav ul {
+  display: inline-flex;
+  gap: rem(24px);
+  list-style-type: none;
+
+  li a {
+    color: color(white);
+    font-size: rem(12px);
+    font-family: font(heading);
+    text-decoration: none;
+
+    &:hover {
+      font-weight: weight(bold);
+      text-decoration: underline;
+    }
+  }
+
+  @include device(large) {
+    gap: rem(56px);
+
+    li a {
+      font-size: rem(16px);
+    }
+  }
+}

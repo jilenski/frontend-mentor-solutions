@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+header .wrapper {
+  @include h-flex(space-between, center);
+
+  margin-top: rem(24px);
+  padding-inline: rem(20px);
+
+  .logo {
+    width: 80px;
+  }
+
+  @include device(large) {
+    margin-top: rem(74px);
+    padding-inline: rem(80px);
+
+    .logo {
+      width: auto;
+    }
+  }
+}

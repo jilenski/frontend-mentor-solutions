@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.hero-btn {
+  width: rem(240px);
+  margin-top: rem(32px);
+  @extend %btn;
+
+  @include device(large) {
+    width: rem(280px);
+    padding: rem(20px);
+  }
+}
+
+#cta-btn {
+  font-size: rem(14px);
+  @extend %btn;
+
+  @include device(large) {
+    width: rem(200px);
+  }
+}

@@ -1,0 +1,31 @@
+$breakpoints: (
+  small: 320px,
+  large: 992px,
+  x-large: 1440px,
+);
+
+$colors: (
+  dark_blue: hsl(217, 28%, 15%),
+  dark_blue_main: hsl(218, 28%, 13%),
+  dark_blue_footer: hsl(216, 53%, 9%),
+  dark_blue_testimonials: hsl(219, 30%, 18%),
+  cyan: hsl(176, 68%, 64%),
+  blue: hsl(198, 60%, 50%),
+  light_red: hsl(0, 100%, 63%),
+  white: hsl(0, 0%, 100%),
+);
+
+$base_font_size: 16px;
+
+$fonts: (
+  families: (heading: ('Raleway',
+      sans-serif,
+    ),
+    body: ('Open Sans',
+      sans-serif,
+    ),
+  ),
+  weights: (regular: 400,
+    bold: 700,
+  ),
+);

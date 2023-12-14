@@ -1,0 +1,21 @@
+@use 'variables' as *;
+@use 'functions' as *;
+@use 'mixins' as *;
+
+%btn {
+  color: color(white);
+  background: linear-gradient(90deg, color(cyan), color(blue));
+  padding: rem(16px);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten(color(cyan), 10%);
+  }
+}
+
+%vflex-centertxt {
+  @include v-flex(center);
+  text-align: center;
+}

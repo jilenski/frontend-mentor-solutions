@@ -1,0 +1,52 @@
+@use '../abstracts' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6, 
+button {
+  font-family: font(heading);
+  font-weight: weight(bold);
+}
+p, span, input, li, a {
+  font-family: font(body);
+  font-weight: weight(regular);
+}
+
+h1 {
+  font-size: rem(24px);
+  line-height: 150%;
+  margin-block: rem(34px 15px);
+
+  @include device(large) { 
+    font-size: rem(40px);
+    margin-block: rem(34px);
+  }
+}
+
+h2, h3, h4 {
+  font-size: rem(17px);
+}
+
+p {
+  font-size: rem(14px);
+  line-height: 150%;
+}
+
+.content .link {
+  font-size: rem(14px);
+  margin-left: rem(7px);
+  padding-bottom: rem(6px);
+  color: color(cyan);
+  text-decoration: none;
+  border-bottom: 2px solid color(cyan);
+
+  i {
+    font-size: 12px;
+    padding-left: rem(5px);
+  }
+
+  &:hover {
+    color: color(white);
+    border-bottom: 2px solid color(white);
+  }
+}

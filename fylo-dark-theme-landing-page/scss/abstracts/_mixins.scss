@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+@mixin device($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin h-flex($h-align, $v-align) {
+  display: flex;
+  justify-content: $h-align;
+  align-items: $v-align;
+}
+
+@mixin v-flex($h-align, $v-align: null) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $v-align;
+  align-items: $h-align;
+}

@@ -1,0 +1,67 @@
+@use '../abstracts' as *;
+
+.call-to-action {
+  background-color: color(dark_blue);
+  box-shadow: 5px 5px 10px 0 color(dark_blue_footer);
+  border-radius: rem(10px);
+  margin: rem(160px 20px 73px);
+  padding: rem(42px 23px 37px);
+  text-align: center;
+
+  p {
+    margin-block: rem(18px 32px);
+  }
+
+  form {
+    @include v-flex(null);
+    padding-inline: rem(5px);
+    gap: rem(24px);
+    position: relative;
+
+    input {
+      font-size: rem(12px);
+      padding: rem(16px 30px);
+      border: none;
+      border-radius: rem(50px);
+      outline: none;
+    }
+
+    #error-message {
+      color: color(light_red);
+      font-size: rem(10px);
+      position: absolute;
+      top: 53px;
+      left: 35px;
+      visibility: hidden;
+    }
+  }
+
+  @include device(large) {
+    margin: rem(200px 290px 84px);
+    padding: rem(47px 77px 41px);
+
+    h3 {
+      font-size: rem(32px);
+    }
+
+    p {
+      margin-block: rem(21px 38px);
+    }
+
+    form {
+      flex-direction: row;
+      gap: rem(29px);
+      padding: 0;
+
+      input {
+        flex: 1;
+      }
+
+      #error-message {
+        font-size: rem(12px);
+        top: 53px;
+        left: 30px;
+      }
+    }
+  }
+}

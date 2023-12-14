@@ -1,0 +1,34 @@
+@use 'abstracts' as *;
+@use 'base' as *;
+@use 'components' as *;
+@use 'layout' as *;
+
+body {
+  &::before {
+    content: '';
+    background: url('../images/bg-curvy-mobile.svg') top center/100% auto no-repeat,
+      linear-gradient(180deg, transparent 35vw, color(dark_blue_main) 35vw);
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 280px);
+    z-index: -1;
+  }
+
+  @include device(large) {
+    &::before {
+      background: url('../images/bg-curvy-desktop.svg') top center/100% auto no-repeat,
+        linear-gradient(180deg, transparent 29vw, color(dark_blue_main) 29vw);
+      top: 848px;
+      height: calc(100% - 848px);
+    }
+  }
+}
+
+@include device(x-large) {
+  .wrapper {
+    width: min(100% - 2.5rem, 85rem);
+    margin-inline: auto;
+  }
+}
