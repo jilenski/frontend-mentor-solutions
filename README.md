@@ -80,6 +80,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
   <tr>
     <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//huddle-landing-page-with-curved-sections/">Huddle Landing Page with Curved Sections</a></th>
     <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//fylo-landing-page-with-two-column-layout/">Fylo Landing Page with Two Column Layout</a></th>
+    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//fylo-dark-theme-landing-page/">Fylo Dark Theme Landing Page</a></th>
   </tr>
   <tr>
     <td>
@@ -90,6 +91,11 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
     <td>
       <a href="./fylo-landing-page-with-two-column-layout/">
         <img src="././fylo-landing-page-with-two-column-layout/desktop-preview.jpg" alt='preview'>
+      </a>
+    </td>
+    <td>
+      <a href="./fylo-dark-theme-landing-page/">
+        <img src="././fylo-dark-theme-landing-page/docs/desktop-preview.jpg" alt='preview'>
       </a>
     </td>
   </tr>
