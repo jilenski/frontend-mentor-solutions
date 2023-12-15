@@ -106,7 +106,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
   </tr>
   <tr>
     <td>
-      <a href="./huddle-landing-page-with-alternating-feature-blocks/">
+      <a href="./huddle-landing-page-with-alternating-feature-blocks/build">
         <img src="././huddle-landing-page-with-alternating-feature-blocks/docs/desktop-preview.jpg" alt='preview'>
       </a>
     </td>
