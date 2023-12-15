@@ -1,8 +1,9 @@
 @use '../abstracts' as *;
 
 header {
+  background: color(very_pale_cyan) url('../images/bg-hero-mobile.svg') top center/contain no-repeat;
   .wrapper {
-    background: color(very_pale_cyan) url('../images/bg-hero-mobile.svg') top center/contain no-repeat;
+    
     padding-block: 1.5rem;
 
     @include respond-to(large) {

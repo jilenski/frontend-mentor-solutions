@@ -1,3 +1,12 @@
+@use 'abstracts' as *;
 @use 'base';
 @use 'components';
 @use 'layout';
+
+
+@include respond-to(xxlarge) {
+  .wrapper {
+    width: min(100% - 0rem, 90rem);
+    margin-inline: auto;
+  }
+}
