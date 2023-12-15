@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+.secondary-button {
+  color: color(very_dark_cyan);
+  background-color: color(white);
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.1);
+  padding: 0.3rem 1.4rem;
+  @extend %button;
+
+  &:hover {
+    span {
+      opacity: 0.6;
+    }
+  }
+
+  @include respond-to(large) {
+    padding: 0.9rem 4rem;
+  }
+}
+
+.primary-button {
+  @extend %button-pink;
+  font-size: 0.75rem;
+  padding: 0.75rem 3.72rem;
+  @extend %button;
+
+  @include respond-to(large) {
+    padding: 1.2rem 4.35rem;
+  }
+}
+
+.cta-button {
+  @extend %button-pink;
+  font-size: 0.625rem;
+  padding: 0.8rem 3.1rem;
+  @extend %button;
+
+  @include respond-to(large) {
+    font-size: 1.25rem;
+    padding: 1.65rem 6.2rem;
+  }
+}

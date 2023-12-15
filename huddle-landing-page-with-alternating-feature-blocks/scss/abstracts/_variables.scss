@@ -1,0 +1,27 @@
+$breakpoints: (
+  small: 240px,
+  medium: 576px,
+  large: 768px,
+  xlarge: 1024px,
+  xxlarge: 1440px,
+);
+
+$fonts: (
+  families: (
+    heading: ('Poppins', sans-serif),
+    body: ('Open Sans', sans-serif),
+  ),
+  weights: (
+    regular: 400,
+    semibold: 600,
+    bold: 700
+  ),
+);
+
+$colors: (
+  pink: hsl(322, 100%, 66%),
+  very_pale_cyan: hsl(193, 100%, 96%),
+  very_dark_cyan: hsl(192, 100%, 9%),
+  grayish_blue: hsl(208, 11%, 55%),
+  white: hsla(0, 0%, 100%)
+)

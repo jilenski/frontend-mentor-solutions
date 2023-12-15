@@ -1,0 +1,62 @@
+@use '../abstracts' as *;
+
+header {
+  .wrapper {
+    background: color(very_pale_cyan) url('../images/bg-hero-mobile.svg') top center/contain no-repeat;
+    padding-block: 1.5rem;
+
+    @include respond-to(large) {
+      background-image: url('../images/bg-hero-desktop.svg');
+      padding-block: 3rem 4.2rem;
+    }
+
+    nav {
+      @include hflex(space-between, center);
+      padding-inline: 1rem;
+
+      img {
+        width: 6.5rem;
+        height: 1rem;
+      }
+
+      @include respond-to(large) {
+        padding-inline: 5rem;
+
+        img {
+          width: 12.5rem;
+          height: 2rem;
+        }
+      }
+    }
+
+    .hero {
+      @include vflex();
+      margin-top: 5.2rem;
+      padding-inline: 2.3rem;
+      gap: 3.4rem;
+
+      button {
+        margin-top: 2rem;
+      }
+
+      figure img {
+        width: 100%;
+      }
+
+      @include respond-to(large) {
+        @include hflex($valign: center);
+        margin-top: 4rem;
+        padding-inline: 5.1rem;
+        gap: 5rem;
+
+        .hero-content {
+          width: 65%;
+        }
+
+        figure img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+@use '../components' as *;
+
+.cards-container {
+  @include vflex();
+  margin-block: 3.75rem 3.4rem;
+  padding-inline: 1.25rem;
+  gap: 2.5rem;
+
+  @include respond-to(large) {
+    margin-block: 10rem 4.5rem;
+    padding-inline: 6.5rem;
+  }
+}

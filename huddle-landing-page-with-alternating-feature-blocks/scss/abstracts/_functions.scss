@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+/** Variable mapping */
+@function color($key) {
+  @return map-get($colors, $key);
+}
+@function font($key) {
+  @return map-get($fonts, families, $key);
+}
+@function fontWeight($key) {
+  @return map-get($fonts, weights, $key);
+}

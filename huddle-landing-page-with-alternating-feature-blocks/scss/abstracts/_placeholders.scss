@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'functions' as *;
+
+%text-common {
+  font-size: 1rem;
+  font-weight: fontWeight(regular);
+  line-height: 150%;
+}
+%link {
+  color: inherit;
+  text-decoration: none;
+}
+
+%button {
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+%button-pink {
+  color: color(white);
+  background-color: color(pink);
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+%card {
+  @include vflex(center);
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.08), 0 6px 20px 0 hsla(0, 0%, 0%, 0.07);
+  border-radius: 15px;
+}
