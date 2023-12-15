@@ -99,6 +99,19 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
       </a>
     </td>
   </tr>
+
+  <tr>
+    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//huddle-landing-page-with-alternating-feature-blocks/">Huddle Landing Page with Alternating Feature Blocks</a></th>
+    
+  </tr>
+  <tr>
+    <td>
+      <a href="./huddle-landing-page-with-alternating-feature-blocks/">
+        <img src="././huddle-landing-page-with-alternating-feature-blocks/docs/desktop-preview.jpg" alt='preview'>
+      </a>
+    </td>
+    
+  </tr>
 </table>
 
 ## Author
