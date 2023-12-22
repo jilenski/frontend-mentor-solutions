@@ -114,6 +114,24 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
   </tr>
 </table>
 
+### Advanced
+
+<table style="border: 1px solid inherit; border-collapse: collapse;">
+  <tr>
+    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//rest-countries-api-with-color-theme-switcher/">REST Countries API with Color Theme Switcher</a></th>
+    
+  </tr>
+  <tr>
+    <td>
+      <a href="./huddle-landing-page-with-alternating-feature-blocks/build">
+        <img src="././rest-countries-api-with-color-theme-switcher/docs/desktop-preview.jpg" alt='preview'>
+      </a>
+    </td>
+    
+  </tr>
+
+</table>
+
 ## Author
 
 <table style="border: none; border-collapse: collapse;">
