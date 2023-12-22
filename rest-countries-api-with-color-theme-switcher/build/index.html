@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Author: J.E. Tayhopon, Frontend Mentor Solution for REST Countries API with color theme switcher, Dec.2023" />
+
+    <title>Frontend Mentor | REST Countries API with color theme switcher</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/styles/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <div class="search-container">
+        <div class="search-input">
+          <i class="fa-solid fa-magnifying-glass search-input__icon"></i>
+          <input type="text" name="search" id="search" placeholder="Search for a country..." class="search-input__field" autocomplete="off" />
+        </div>
+        <div class="search-filter">
+          <button type="button" class="search-filter__button">
+            <span class="search-filter__button__text">Filter by Region</span>
+            <i class="fa-solid fa-angle-down search-filter__button__icon"></i>
+          </button>
+          <ul class="search-filter--options">
+            <li class="option">Africa</li>
+            <li class="option">America</li>
+            <li class="option">Asia</li>
+            <li class="option">Europe</li>
+            <li class="option">Oceania</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="cards-container"></section>
+    </main>
+
+    <script type="module" aync src="./assets/scripts/main.js"></script>
+  </body>
+</html>

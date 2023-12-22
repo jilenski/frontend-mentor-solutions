@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.dark {
+  background-color: get-color(dark, background);
+
+  *,
+  ::placeholder {
+    color: get-color(dark, text);
+  }
+
+  header,
+  ul,
+  .search-container>*,
+  .back-btn,
+  .card,
+  .border-country-card {
+    background-color: get-color(dark, element);
+    box-shadow: 0 0 10px 0 darken(get-color(dark, background), 5%);
+  }
+
+  .option {
+    &:hover {
+      background-color: darken(get-color(dark, background), 1%);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+header {
+  @include flexbox($justify: space-between, $align: center);
+  height: 5rem;
+}

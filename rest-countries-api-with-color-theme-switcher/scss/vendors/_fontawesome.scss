@@ -1,0 +1,64 @@
+/** fa-variables */
+$fa-font-path: '../fonts/webfonts/';
+
+/** fa-solid custom fonts */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("#{$fa-font-path}fa-solid-900.woff2") format("woff2"),
+  url("#{$fa-font-path}fa-solid-900.ttf") format("truetype");
+}
+
+.fa-solid {
+  font-weight: 900;
+}
+
+/** fa-regular custom font */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("#{$fa-font-path}fa-regular-400.woff2") format("woff2"),
+  url("#{$fa-font-path}fa-regular-400.ttf") format("truetype");
+}
+
+.fa-regular {
+  font-weight: 400;
+}
+
+/** fa-styling */
+.fa-solid,
+.fa-regular {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-solid,
+.fa-regular {
+  font-family: 'Font Awesome 6 Free';
+}
+
+/** fa-icons used */
+.fa-moon::before {
+  content: "\f186";
+}
+
+.fa-magnifying-glass::before {
+  content: "\f002";
+}
+
+.fa-angle-down::before {
+  content: "\f107";
+}
+
+.fa-arrow-left-long::before {
+  content: "\f177";
+}

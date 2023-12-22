@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+.theme-selector {
+  font-size: clamp(0.75rem, 3.2vw, 1rem);
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
+}
+
+.back-btn {
+  font-size: clamp(0.875rem, 3.2vw, 1rem);
+  padding: clamp(0.4rem, 1vw, 0.56rem) clamp(1.5rem, 3vw, 2.25rem);
+  border-radius: 5px;
+
+  &__icon {
+    margin-right: clamp(0.5rem, 1vw, 0.7rem);
+  }
+}

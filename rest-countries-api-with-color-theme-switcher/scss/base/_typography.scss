@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+body {
+  font-family: get-font(body);
+}
+
+h1 {
+  font-size: clamp(0.875rem, 3.7vw, 1.5rem);
+}
+
+h1, h2 {
+  font-weight: get-font-weight(bold);
+}
+
+h3, strong {
+  font-weight: get-font-weight(medium);
+}
+
+span, li, ::placeholder {
+  font-weight: get-font-weight(regular);
+}

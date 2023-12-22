@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.search-input {
+  @include flexbox($align: center);
+  gap: 1.5rem;
+  width: min(100%, 25rem, 30rem);
+
+  &__field {
+    flex: 1;
+  }
+}

@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+body {
+  color: get-color(light, text);
+  background-color: darken(get-color(light, background), 3%);
+}
+
+header, ul,
+.search-container > *,
+.back-btn,
+.card, .border-country-card {
+  background-color: get-color(light, element);
+  box-shadow: 0 0 10px 0 darken(get-color(light, background), 10%);
+}
+
+.option {
+  &:hover {
+    background-color: darken(get-color(light, background), 5%);
+  }
+}
+
+.search-input,
+::placeholder {
+  color: get-color(light, input_field);
+}
+

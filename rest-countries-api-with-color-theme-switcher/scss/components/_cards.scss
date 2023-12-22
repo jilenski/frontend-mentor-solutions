@@ -1,0 +1,46 @@
+@use '../abstracts' as *;
+
+.card {
+  height: 21rem;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &__image {
+    height: 10rem;
+    background: center/cover no-repeat;
+    box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.1);
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__details {
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 1.125rem;
+      margin-bottom: 0.9rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.border-country-card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.75rem;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  margin-top: 1rem;
+  margin-right: 0.3rem;
+  padding-inline: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}

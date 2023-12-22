@@ -1,0 +1,31 @@
+$breakpoints: (
+  small: 240px, /*15rem*/
+  medium: 768px, /*48rem*/
+  large: 1280px, /*80rem*/
+  xlarge: 1440px, /*90rem*/
+);
+
+$colors: (
+  dark: (
+    text: hsl(0, 0%, 100%),
+    element: hsl(209, 23%, 22%),
+    background: hsl(207, 26%, 17%),
+  ),
+  light: (
+    text: hsl(200, 15%, 8%),
+    input_field: hsl(0, 0%, 52%),
+    element: hsl(0, 0%, 100%),
+    background: hsl(0, 0%, 98%),
+  ),
+);
+
+$fonts: (
+  families: (
+    body: ('Nunito Sans', sans-serif),
+  ),
+  weights: (
+    regular: 300,
+    medium: 600,
+    bold: 800,
+  ),
+);

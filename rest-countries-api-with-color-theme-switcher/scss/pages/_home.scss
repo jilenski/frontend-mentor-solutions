@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.search-container {
+  @include flexbox(column);
+  font-size: clamp(0.75rem, 3vw, 0.875rem);
+  margin-block: clamp(1.5rem, 4vw, 3rem) clamp(2rem, 4vw, 3rem);
+  gap: 2.5rem;
+
+  & > * {
+    padding-block: clamp(1rem, 3vw, 1.15rem);
+    padding-inline: 1.5rem;
+    border-radius: 5px;
+  }
+
+  ul {
+    border-radius: 5px;
+  }
+
+  @include respond-to(medium) {
+    @include flexbox(row, space-between);
+  }
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 16.5rem);
+  justify-content: space-evenly;
+  gap: clamp(2.5rem, 4vw + 0.5rem, 4.7rem);
+  padding-bottom: 4rem;
+}
