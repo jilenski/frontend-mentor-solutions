@@ -123,7 +123,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
   </tr>
   <tr>
     <td>
-      <a href="./rest-countries-api-with-color-theme-switcher/build">
+      <a href="./rest-countries-api-with-color-theme-switcher/build/index.html">
         <img src="././rest-countries-api-with-color-theme-switcher/docs/desktop-preview.jpg" alt='preview'>
       </a>
     </td>
