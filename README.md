@@ -123,7 +123,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
   </tr>
   <tr>
     <td>
-      <a href="./huddle-landing-page-with-alternating-feature-blocks/build">
+      <a href="./rest-countries-api-with-color-theme-switcher/build">
         <img src="././rest-countries-api-with-color-theme-switcher/docs/desktop-preview.jpg" alt='preview'>
       </a>
     </td>
