@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+%cta-resets {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+button {
+  @extend %cta-resets;
+  cursor: pointer;
+}
+
+input {
+  @extend %cta-resets;
+  outline: none;
+}

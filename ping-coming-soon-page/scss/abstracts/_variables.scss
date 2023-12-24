@@ -1,0 +1,25 @@
+$breakpoints: (
+  small: 240px, //15rem
+  medium: 768px, //48rem
+  large: 1280px, // 80rem
+  xlarge: 1440px, //90rem
+);
+
+$colors: (
+  primary-blue: hsl(223, 87%, 63%),
+  secondary-pale-blue: hsl(223, 100%, 88%),
+  secondary-light-red: hsl(354, 100%, 66%),
+  neutral-gray: hsl(0, 0%, 59%),
+  neutral-very-dark-blue: hsl(209, 33%, 12%),
+);
+
+$fonts: (
+  families: (
+    body: ('Libre Franklin', sans-serif),
+  ),
+  weights: (
+    regular: 300,
+    medium: 600,
+    bold: 700,
+  ),
+);

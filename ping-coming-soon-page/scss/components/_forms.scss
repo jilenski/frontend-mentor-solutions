@@ -1,0 +1,63 @@
+@use '../abstracts' as *;
+
+form {
+  @include flexbox(column);
+  width: min(75vw, 40rem);
+  margin: auto;
+  gap: clamp(0.6rem, 2vw, 1rem);
+
+  @include respond-to(medium) {
+    @include flexbox(row);
+    position: relative;
+
+    input {
+      flex: 1;
+    }
+
+    em {
+      position: absolute;
+      top: 110%;
+      left: 2rem
+    }
+    
+    button {
+      width: 12.5rem;
+    }
+  }
+
+  & > * {
+    height: clamp(2.5rem, 6vw, 3.5rem);
+    border-radius: 50px;
+  }
+
+  input {
+    padding-inline: 2rem;
+    border: 1px solid get-color(secondary-pale-blue);
+
+    &::placeholder {
+      color: get-color(secondary-pale-blue);
+    }
+  }
+
+  button {
+    background-color: get-color(primary-blue);
+
+    &:hover, &:active {
+      opacity: 0.8;
+    }
+
+    &:active {
+      transform: scale(1.03);
+    }
+  }
+
+  &.error {
+    input {
+      border-color: get-color(secondary-light-red);
+    }
+
+    em {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+.socials {
+  @include flexbox($justify: center);
+  margin-top: 4.6rem;
+  gap: 0.8rem
+}
+
+.fa-brands {
+  width: 2rem;
+  height: 2rem;
+  padding-block: 0.5rem;
+  color: get-color(primary-blue);
+  font-size: 0.875rem;
+  border: 1px solid get-color(secondary-pale-blue);
+  border-radius: 100%;
+
+  &:hover, &:active {
+    color: hsl(0, 100%, 100%);
+    background-color: get-color(primary-blue);
+    border-color: get-color(primary-blue);
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.copyright {
+  display: block;
+  margin-block: 1.7rem 2.3rem;
+}
+
+.attribution {
+  background: transparent;
+  font-size: 0.5rem;
+  text-align: center;
+  padding-bottom: 0.3rem;
+
+  a {
+    color: get-color(primary-blue);
+  }
+}

@@ -1,0 +1,13 @@
+main {
+  margin-top: clamp(2.5rem, 4vw, 3rem);
+  flex: 1;
+
+  p {
+    margin-block: 1rem clamp(2rem, 3vw, 2.5rem);
+  }
+
+  img {
+    width: min(85vw, 640px);
+    margin-top: clamp(4.3rem, 7vw, 5.4rem);
+  }
+}

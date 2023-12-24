@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.wrapper {
+  @include flexbox(column);
+  width: min(100%, 90rem);
+  min-height: 100vh;
+  margin: auto;
+  padding-block: 5.3rem 0;
+}
