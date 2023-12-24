@@ -7,6 +7,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
 - [Challenges](#challenges)
   - [Newbie](#newbie)
   - [Junior](#junior)
+  - [Advanced](#advanced)
 - [Author](#author)
 
 ## Challenges
@@ -62,6 +63,7 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
 
   <tr>
     <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//huddle-landing-page-with-single-introductory-section/">Huddle Landing Page with Single Introductory Section</a></th>
+    <th><a href="https://github.com/jilenski/frontend-mentor-solutions.github.io/tree/main//ping-coming-soon-page/">Ping Coming Soon Page</a></th>
   </tr>
   <tr>
     <td>
@@ -69,7 +71,11 @@ This is a compilation of solutions to [Frontend Mentor Challenges](https://www.f
         <img src="././huddle-landing-page-with-single-introductory-section/desktop-preview.jpg" alt="preview">
       </a>
     </td>
-    
+    <td>
+      <a href="./ping-coming-soon-page/build/index.html">
+        <img src="././ping-coming-soon-page/docs/desktop-preview.jpg" alt="preview">
+      </a>
+    </td>
   </tr>
   
 </table>
