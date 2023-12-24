@@ -41,6 +41,7 @@ form {
 
   button {
     background-color: get-color(primary-blue);
+    box-shadow: 0 5px 10px 0 get-color(secondary-pale-blue);
 
     &:hover, &:active {
       opacity: 0.8;

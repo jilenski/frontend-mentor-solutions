@@ -1,13 +1,18 @@
 const formEl = document.getElementById('form');
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
 
 const handleSubmit = (e) => {
   e.preventDefault();
 
-  const emailInput = document.getElementById('email');
   const email = emailInput.value;
+  const noEmailProvided = 'Whoops! It looks like you forgot to add your email';
+  const badEmail = 'Please provide a valid email address';
 
   if (!validateEmail(email)) {
     formEl.classList.add('error');
+
+    errorMessage.textContent = email.length == 0 ? noEmailProvided : badEmail;
   }
 };
 
